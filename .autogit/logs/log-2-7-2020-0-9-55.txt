@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 02 2020 00:09:55 GMT+0200 (Eastern European Standard Time)
+------------------------------------------------------
+
+Modified files:
+* accounts/forms.py
+* accounts/urls.py
+* accounts/views.py
+
+
+Created files:
+* .autogit/logs/log-1-7-2020-23-39-45.txt
+* accounts/templates/profile/profile.html
+* accounts/templates/profile/profile_edit.html
+* accounts/templates/registration/signup.html
+
+
+Deleted files:
+
+
+Renamed files:

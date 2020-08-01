@@ -31,13 +31,20 @@ def profile(request):
 
 
 def profile_edit(request):
+    profile = Profile.objects.get(user=request.user)
     if request.method == 'POST':
-        userform = UserForm(request.POST)
-        profile_form = ProfileForm(request.POST)
+        userform = UserForm(request.POST , instance=request.user)
+        profile_form = ProfileForm(request.POST , instance=profile)
+        if userform.is_valid() and profile_form.is_valid():
+            userform.save()
+            myform = profile_form.save(commit=False)
+            myform.user = request.user
+            myform.save()
+            return redirect('/accounts/profile')
 
     else:  ## show
-        userform = UserForm()
-        profile_form = ProfileForm()
+        userform = UserForm(instance=request.user)
+        profile_form = ProfileForm(instance=profile)
 
     return render(request,'profile/profile_edit.html',{
         'userform' : userform , 
