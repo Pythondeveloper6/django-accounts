@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sat Aug 01 2020 23:39:45 GMT+0200 (Eastern European Standard Time)
+------------------------------------------------------
+
+Modified files:
+* accounts/views.py
+* project/urls.py
+
+
+Created files:
+* accounts/forms.py
+* accounts/urls.py
+
+
+Deleted files:
+
+
+Renamed files:
